@@ -1,0 +1,871 @@
+.home{
+}
+.container-home{
+    margin: 0px;
+    height: 100vh;
+    padding: 24px;
+    padding-bottom: 48px;
+    padding-top: 112px;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./assets/home/background-home-mobile.jpg);
+}
+.nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    z-index: 2;
+}
+.nav-icon{
+    background: var(--clr-white);
+    border: 50%;
+    padding: 20px;
+    background-image: url(./assets/shared/logo.svg);
+    background-size: contain;
+    z-index: 2;
+}
+.nav-button{
+    height: 21px;
+    width: 24px;
+    background-image: url(./assets/shared/icon-hamburger.svg);
+}
+.nav-list{
+    padding-top: 118px;
+    padding-left: 32px;
+    position: fixed;
+    left: calc(100vw - 250px);
+    /* left: 100vw; */
+    top: -20px;
+    list-style: none;
+    height: 100vh;
+    width: 75vw;
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: left;
+    transition-duration: 500ms;
+    /* z-index: 3; */
+}
+.nav-list-escape{
+    background-image: url(./assets/shared/icon-close.svg);
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    top: 34px;
+    right: 26px;
+}
+.nav-list li {
+    font-family: var(--ff-sans-cond);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--clr-white);
+    line-height: 51px;
+}
+.nav-list span {
+    margin-right: 11px;
+}
+.container-home h1 {
+    font-family: var(--ff-serif);
+    text-decoration: none;
+    font-size: 5rem;
+    line-height: 100px;
+    font-family: "Bellefair";
+    font-weight: 400;
+}
+.home-paragraph{
+    text-align: center;
+    line-height: 25px;
+    width: 38ch;
+}
+.large-button{
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 150px;
+    aspect-ratio: 1;
+    text-decoration: none;
+    border-radius: 100%;
+    font-size: 20px;
+}
+
+
+/* ----------------------------------- */
+/*          DESTINATION STYLING        */
+/* ----------------------------------- */
+.container-destination{
+    padding-top: 88px;
+    padding-inline: 24px;
+    padding-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+
+}
+.container-destination h2 {
+    font-family: var(--ff-sans-cond);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.container-destination > h2 > span {
+    color: hsl( var(--clr-white) / .25);
+    padding-right: 18px;
+    font-weight: 700;
+}
+.destination-img{
+    height: 170px;
+    width: 170px;
+    aspect-ratio: 1;
+    margin-top: 32px;
+}
+.destination-navigation{
+    width: 100%;
+    padding: 23px 49px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.destination-navigation * {
+    background: none;
+    color: hsl( var(--clr-light));
+    border: none;
+    font-family: var(--ff-sans-cond);
+    text-transform: uppercase;
+}
+.destination-navigation *:hover {
+    color: hsl( var(--clr-white));
+    border-bottom: 3px solid hsl( var(--clr-white) / .5);
+}
+.destination-navigation .active{
+    color: 2px solid hsl(var(--clr-white));
+    border-bottom: 2px solid hsl(var(--clr-white));
+}
+.destination-name{
+    font-size: 56px;
+    line-height: 64px;
+    font-family: var(--ff-serif);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.destination-description{
+    font-family: var(--ff-sans-normal);
+    color: hsl( var(--clr-light));
+    font-size: 15px;
+    line-height: 25px;
+    width: 37ch;
+}
+.gray-line{
+    width: 100%;
+    height: 1px;
+    background-color: #383B4B;
+    margin: 32px 0px;
+}
+.destination-distance,
+.destination-travel{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: var(--ff-serif);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+.destination-travel{
+
+}
+.avg-distance, .est-time{
+    margin-bottom: 12px;
+    font-family: var(--ff-sans-cond);
+    line-height: 17px;
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
+    color: hsl( var(--clr-light));
+    font-size: 14px;
+}
+
+/* ----------------------------------- */
+/*          CREW        STYLING        */
+/* ----------------------------------- */
+.container-crew{
+    padding-top: 88px;
+    padding-inline: 24px;
+    padding-bottom: 54px;
+    max-height: none;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    background-image: url(./assets/crew/background-crew-mobile.jpg);
+    background-size: cover;
+}
+.container-crew h2 {
+    font-family: var(--ff-sans-cond);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+.container-crew > h2 > span {
+    color: hsl( var(--clr-white) / .25);
+    padding-right: 18px;
+    font-weight: 700;
+}
+.container-crew .gray-line{
+    margin-top: 0px;
+}
+.crew-img{
+    height: 222px;
+    margin-top: 32px;
+}
+.crew-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 88px;
+    margin-bottom: 32px;
+}
+.dot-indicator{
+    padding: 0px;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: none;
+    background: hsl( var(--clr-white) / .1);
+}
+.crew-navigation button:not(.active):focus,
+.crew-navigation button:not(.active):hover{
+    background: hsl( var(--clr-white) / .5);
+}
+.crew-navigation .active{
+    background: hsl( var(--clr-white));
+}
+.crew-role{
+    font-size: 16px;
+    line-height: 18px;
+    font-family: var(--ff-serif);
+    color: hsl( var(--clr-white) / .7);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.crew-name{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: var(--ff-serif);
+    color: hsl( var(--clr-white));
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.crew-bio{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: var(--ff-sans-normal);
+    color: hsl( var(--clr-light));
+    width: 327px;
+}
+
+/* ----------------------------------- */
+/*          TECHNOLOGY  STYLING        */
+/* ----------------------------------- */
+.container-technology{
+    height: 100vh;
+    padding-top: 88px;
+    padding-bottom: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    position: relative;
+}
+.container-technology h2 {
+    font-family: var(--ff-sans-cond);
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    line-height: 19px;
+    margin-bottom: 32px;
+}
+.container-technology > h2 > span {
+    color: hsl( var(--clr-white) / .25);
+    padding-right: 18px;
+    font-weight: 700;
+}
+.technology-img{
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 2.205;
+}
+.technology-navigation{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 152px;
+}
+.technology-navigation > button{
+    font-family: var(--ff-serif);
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 1px solid hsl( var(--clr-white) / .1);
+
+    border-radius: 50%;
+    padding: 0px;
+    height: 40px;
+    width: 40px;
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-white));
+    z-index: 0;
+}
+.technology-navigation > *:not(.active):focus{
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
+}
+.technology-navigation .active{
+    background: hsl( var(--clr-white) / 1);
+    color: hsl(var(--clr-dark));
+}
+.technology-name h3 {
+    margin-top: 27px;
+    margin-bottom: 9px;
+    font-family: var(--ff-sans-cond);
+    line-height: 17px;
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
+    color: hsl( var(--clr-light));
+    font-size: 14px;
+}
+.technology-name{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: var(--ff-serif);
+    color: hsl( var(--clr-white));
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.technology-description{
+    font-size: 15px;
+    line-height: 25px;
+    font-family: var(--ff-sans-normal);
+    color: hsl( var(--clr-light));
+    width: 327px;
+    word-break: normal;
+}
+
+/* -------------------------------- */
+/*          MEDIA QUERIES           */
+/* -------------------------------- */
+@media screen and (min-width: 768px) {
+    .container-home{
+        padding-top: 202px;
+        background-image: url(./assets/home/background-home-tablet.jpg);
+    }
+    .large-button{
+        height: 242px;
+        width: auto;
+        aspect-ratio: 1;
+        font-size: 32px;
+        margin-bottom: 42px;
+    }
+    .container-home h2 {
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .container-home h1 {
+    line-height: 150px;
+    font-size: 150px;
+    }
+    .container-home p{
+        font-size: 16px;
+        line-height: 28px;
+        width: 49ch;
+    }
+    .nav{
+        height: 96px;
+        padding-inline: 39px;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-icon{
+        position: fixed;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-static-list{
+        position: fixed;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 96px;
+        right: 0px;
+        top: -24px;
+        background: hsl(var(--clr-dark));
+        font-style: var(--ff-sans-cond);
+        color: var(--clr-white);
+        letter-spacing: 2.36px;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: rgba(255, 255, 255, 0.025);
+    }
+    .nav-static-list span{
+        display: none;
+    }
+    .nav-static-list li {
+        padding-inline: 22px;
+        height: 95%;
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-static-list li:not(.active):hover,
+    .nav-static-list li:not(.active):focus
+    {
+        border-bottom: 3px solid hsl( var(--clr-white) / .5)
+    }
+    .nav-static-list .active{
+        border-bottom: 3px solid hsl( var(--clr-white))
+    }
+
+
+    /* ------------------------------ */
+    /* ----         DESTINATION------ */
+    /* ------------------------------ */
+    .container-destination{
+        padding-top: 136px;
+        padding-inline: 38.5px;
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+    }
+    .container-destination h2{
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        line-height: 24px;
+        align-self: flex-start;
+    }
+    .destination-img{
+        height: 300px;  
+        width: 300px;
+        margin-bottom: 52px;
+    }
+    .destination-navigation{
+        padding: 0px;
+        width: 286px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .destination-navigation button {
+        padding: 0px;
+        height: 34px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    /* .destination-navigation > button:hover{
+        border-bottom: 3px solid hsl( var(--clr-white) .5)
+    } */
+    .destination-name{
+        font-size: 80px;
+        line-height: 92px;
+        margin-top: 32px;
+    }   
+    .destination-description{
+        font-size: 16px;
+        line-height: 28px;
+        width: 573px;
+    }
+    .container-destination .gray-line{
+        margin: 49px 0px 28px 0px;
+    }
+    .destination-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 573px;
+    }
+
+    /* ------------------------------ */
+    /* ----         CREW       ------ */
+    /* ------------------------------ */
+    .container-crew{
+        display: none;
+    }
+    .container-crew-tablet{
+        max-height: none;
+        height: 100vh;
+        padding-top: 136px;
+        padding-inline: 38.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;        
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+    }
+    .container-crew-tablet h2{
+        font-family: var(--ff-sans-cond);
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        line-height: 24px;
+        align-self: flex-start;
+        margin-bottom: 60px;
+    }
+    .container-crew-tablet > h2 > span {
+        color: hsl( var(--clr-white) / .25);
+        padding-right: 18px;
+        font-weight: 700;
+    }
+    .crew-img{
+        position: absolute;
+        bottom: 0px;
+        height: 532px;
+    }
+    .crew-role{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .crew-name{
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .crew-bio{
+        font-size: 16px;
+        line-height: 28px;
+        min-height: 160px;
+        width: 458px;
+    }
+    .crew-navigation{
+        margin-top: 40px;
+    }
+
+
+
+    
+    /* ------------------------------ */
+    /* ----     TECHNOLOGY     ------ */
+    /* ------------------------------ */
+    .container-technology{
+        padding-top: 136px;
+        padding-bottom: 87px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(./assets/technology/background-technology-tablet.jpg);
+        background-size: cover;
+    }
+    .container-technology h2 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        line-height: 24px;
+        align-self: flex-start;
+        margin-left: 38.5px;
+    }
+    .container-technology > h2 > span {
+        color: hsl( var(--clr-white) / .25);
+        padding-right: 18px;
+        font-weight: 700;
+    }
+    .technology-img{
+        background-size: cover;
+        aspect-ratio: 2.205;
+        width: 100%;
+    }
+    .technology-navigation{
+        margin-top: 56px;
+        width: 210px;
+        justify-content: space-between;
+    }
+    .technology-navigation > button{
+        height: 60px;
+        width: 60px;
+    }
+    .technology-name h3 {
+        margin-top: 44px;
+        margin-bottom: 16px;
+        font-family: var(--ff-sans-cond);
+        line-height: 16px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        color: hsl( var(--clr-light));
+        font-size: 14px;
+    }
+    .technology-name{
+        font-size: 40px;
+        line-height: 46px;
+        font-family: var(--ff-serif);
+        color: hsl( var(--clr-white));
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+    .technology-description{
+        font-size: 16px;
+        line-height: 28px;
+        font-family: var(--ff-sans-normal);
+        color: hsl( var(--clr-light));
+        width: 458px;
+        word-break: normal;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .nav-static-list{
+        display: none;
+    }
+    .container-crew-tablet{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* ------------------------------ */
+    /* ----     HOME           ------ */
+    /* ------------------------------ */
+    .container-home{
+        position: relative;
+        width: 100vw;
+        max-width: none;
+        padding-top: 40px;
+        padding-right: 0px;
+        justify-content: end;
+        align-items: start;
+        padding-left: 165px;
+        padding-bottom: 131px;
+        background-image: url(./assets/home/background-home-desktop.jpg);
+    }
+    .large-button{
+        height: 274px;
+        width: 274px;
+        font-size: 32px;
+        margin-bottom: 42px;
+        position: absolute;
+        bottom: 83px;
+        right: 165px;
+    }
+    .container-home h2 {
+        line-height: 34px;
+        font-size: 28px;
+    }
+    .container-home h1 {
+        font-size: 150px;
+        line-height: 172px;
+    }
+    .container-home p{
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+        width: 46ch;
+    }
+    .nav{
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav-icon{
+        padding: 24px;
+    }
+    .nav{
+        padding-left: 55px;
+        height: 96px;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+    }
+    .nav-static-list{
+        backdrop-filter: blur(25px);
+        width: 830px;
+        margin: 0px;
+        top: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-static-list span {
+        display: inline;
+        font-weight: 700;
+        padding-inline-end: 11px;
+    }
+
+    /* ------------------------------ */
+    /* ----     DESTINATION     ------ */
+    /* ------------------------------ */
+    .container-destination{
+        height: 100%;
+        padding-left: calc(100vw - 608px);
+        padding-top: 310px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+    }
+    .destination-navigation{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .destination-name{
+        font-size: 100px;
+        line-height: 115px;
+        margin-top: 37px;
+        margin-bottom: 14px;
+    }
+    .container-destination h2{
+        position: absolute;
+        left: 166.5px;
+        top: 212px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .destination-img{
+        position: absolute;
+        height: 445px;
+        width: 445px;
+        left: 230px;
+        top: 343px;
+    }
+    .destination-description{
+        font-size: 18px;
+        line-height: 32px;
+        width: 440px;
+    }
+    .destination-info{
+        width: 344px;
+        justify-content: space-between;
+    }
+    .gray-line{
+        width: 100%;
+    }
+
+
+
+    /* ------------------------------ */
+    /* ----     CREW     ------ */
+    /* ------------------------------ */
+    .container-crew-tablet{
+        padding: 212px 166px 94px 166px;
+        max-height: none;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        background-image: url(./assets/crew/background-crew-desktop.jpg);
+        background-size: cover;
+    }
+    .container-crew-tablet h2{
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 154px;
+    }
+    .crew-img{
+        position: absolute;
+        right: 137px;
+        height: 75%;
+        /* height: 654px; */
+    }
+    .crew-role{
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .crew-name{
+        margin-top: 15px;
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .crew-bio{
+        width: 444px;
+        font-size: 18px;
+        line-height: 32px;
+        height: 160px;
+    }
+    .crew-navigation{
+        margin-top: 120px;
+        width: 132px;
+    }
+    .dot-indicator{
+        height: 15px;
+        width: 15px;
+    }
+    /* ------------------------------ */
+    /* ----     TECHNOLOGY     ------ */
+    /* ------------------------------ */
+    .technology-img{
+        position: absolute;
+        left: 925px;
+        width: 34%;
+        aspect-ratio: 512/527;
+        top: 272px;
+    }
+    .container-technology{
+        height: 100vh;
+        padding: 383px 0px 0px 325px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        background-image: url(./assets/technology/background-technology-desktop.jpg);
+        background-size: cover;
+    }
+    .technology-navigation{
+        margin: 0px;
+        flex-direction: column;
+        position: absolute;
+        left: 165px;
+        height: 304px;
+    }
+    .technology-navigation > button{
+        height: 80px;
+        width: 80px;
+    }
+    .container-technology h2{
+        position: absolute;
+        font-size: 28px;
+        line-height: 34px;
+        left: 166px;
+        top: 212px;
+        background-size: contain;
+    }
+    .container-technology h3{
+        margin: 0px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 11px;
+    }
+    .technology-name{
+        margin: 0px;
+        font-size: 56px;
+        line-height: 64px;
+        margin-bottom: 16px;
+    }
+    .technology-description{
+        font-size: 18px;
+        line-height: 32px;
+        width: 444px;
+    }
+
+}
